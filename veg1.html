@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+/*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+/*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+        .recipe-info i{
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+/*-------------------- pagination ---------------------*/
+        .pagination {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .pagination a{
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+        .pagination a.active{
+            background-color: tomato;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .pagination a:hover:not(.active){
+            background-color: hsl(0, 1%, 70%);
+            border-radius: 5px;
+        }
+/*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+<!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="index.html" target="_blank">Home</a>
+        | <span>Vegetarian Recipes</span>
+        <div class="search-box">
+            <input type="text" placeholder="Search recipes...">
+            <a href="search.html"><button type="submit">Search</button></a>
+        </div>
+    </div>
+
+    <div class="recipe-list">
+<!------------------------ Recipe Item ----------------------->
+        <div class="recipe-item">
+            <a href="Thotakura Majjiga Pulusu .html" target="_blank">
+                <img src="Thotakura Majjiga Pulusu.png" alt="Thotakura Majjiga Pulusu">
+                <div class="recipe-info">
+                    <h3>Thotakura Majjiga Pulusu</h3>
+<i>It is a quick-to-make, simple recipe from Andhra Pradesh. I love this recipe. Butter Milk Stew is made in various forms across the country. Northerners call it Kadhi and in South India, especially in Andhra, it is called Majjiga Rasam.</i>                    <p class="category">Curries</p>
+            </a>
+                    
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Mango Ginger Rasam.html" target="_blank">
+            <img src="mango rasam.png" alt="Mango Ginger Rasam">
+            <div class="recipe-info">
+                <h3>Mango Ginger Rasam</h3>
+                <i>The Mango Ginger Rasam is very aromatic and tasty. When I make Rasam, I usually say that it shouldn't be over boiled. But this Rasam tastes better if it is boiled well.</i>
+                <p class="category">Curries</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Jackfruit Biryani.html" target="_blank">
+            <img src="Jackfruit Biryani.png" alt="jackfruit Biryani">
+            <div class="recipe-info">
+                <h3>Jackfruit Biryani</h3>
+                <i>Jackfruit Biryani is a beautiful recipe for parties, special days and it is a special wedding recipe.</i>
+        <p class="category">Wedding recipe</p></a>
+    </div>
+    </div>
+    <div class="recipe-item">
+        <a href="Mudda Pappu.html" target="_blank">
+            <img src="Mudda Pappu.png" alt="Mudda Pappu">
+            <div class="recipe-info">
+                <h3>Mudda Pappu</h3>
+                <i>Plain, thick Dal is a recipe that Telugus just love. It is very simple to make, and it tastes great when eaten with Rice and Mango Pickle or even just Ghee in hot Rice. </i>
+                <p class="category">Curries</p></a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Tomato Pappu.html" target="_blank">
+            <img src="Tomato Pappu.png" alt="Tomato Pappu">
+            <div class="recipe-info">
+                <h3>Tomato Pappu</h3>
+                <i>Andhra Tomato Dal - Nothing to beat the spicy and sour Special Tomato Dal made by Telugu people.It goes well with Rice or Chapati.To make the normal dal more special and tasty.</i>
+                <p class="category">Curries</p>
+        </a>
+    </div>
+    </div>
+
+<!---------------------- Add other recipe items similarly ----------------------------->
+
+    <div class="pagination">
+        <a href="veg1.html">>></a>
+        <a href="Veg.html">1</a>
+        <a href="veg1.html" class="active">2</a>
+        <a href="Veg.html"><<</a>
+    </div>
+<!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

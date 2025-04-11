@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <script src="https://kit.fontawesome.com/9d21656966.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f9;
+            color: #333;
+        }
+        .home {
+            padding: 20px;
+            font-size: 20px;
+        }
+        .search-container {
+            text-align: center;
+            padding: 1rem 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container h1 {
+            color: #e67e22;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-box input {
+            width: 50%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 2px solid #e67e22;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+
+        .search-box button {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-box button:hover {
+            background-color: #d35400;
+        }
+
+        .search-box button span {
+            font-size: 1.5rem;
+        }
+
+        .explore-container {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #f4edf4;
+        }
+
+        .explore-container h2 {
+            color: #5c2a2a;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        .explore-container .categories a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .category {
+            background-color: #fff;
+            color: #5c2a2a;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .category i {
+            font-size: 2rem;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .category.active {
+            background-color: #e67e22;
+            color: #fff;
+        }
+
+        .category.active i {
+            color: #fff;
+        }
+/*-----------------Footer-----------------------*/
+ .footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tagline span {
+    font-style: italic;
+    font-size: 16px;
+    color: #e27a3f;
+    display: inline-block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #4c0070;
+  }
+    .categories ul li:hover {
+        color: rgb(254, 148, 113);
+        font-size: 20px;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <a href="index.html">HOME</a>
+         | <span>Search</span>
+    </div>
+    <!------------------------- Search Section ---------------------------->
+    <div class="search-container">
+        <h1>Search for Recipes</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search by Ingredients, Cuisine, Category, Diet.">
+            <button><span>&#8594;</span></button>
+        </div>
+    </div>
+
+    <!--------------------- Explore Recipes Section ------------------------>
+    <div class="explore-container">
+        <h2>Explore Recipes</h2>
+
+        <div class="categories">
+            <a href="bf.html" target="_blank">
+            <div class="category active">
+                <i class="fas fa-coffee"></i>
+                <p>BREAKFASTS</p></a>
+            </div>
+        
+
+            <div class="category">
+                <a href="Curries.html" target="_blank">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p>CURRIES</p></a>
+            </div>
+
+            <div class="category">
+                <a href="FLAVORED RICE.html" target="_blank">
+                <i class="fas fa-bowl-rice"></i>
+                <p>FLAVORED RICE</p></a>
+            </div>
+
+            <div class="category">
+                <a href="Sweets.html" target="_blank">
+                <i class="fas fa-candy-cane"></i>
+                <p>SWEETS</p></a>
+            </div>
+
+            <div class="category">
+                <a href="Snacks.html" target="_blank">
+                <i class="fas fa-cookie-bite"></i>
+                <p>SNACKS</p></a>
+            </div>
+
+            <div class="category">
+                <a href="Prasadam.html" target="_blank">
+                <i class="fa-solid fa-plate-wheat"></i>
+                <p>PRASADAM</p></a>
+            </div>
+
+            <div class="category">
+                <a href="Startes.html" target="_blank">
+                <i class="fas fa-drumstick-bite"></i>
+                <p>STARTERS</p></a>
+            </div>
+
+            <div class="category">
+                <a href="drink.html" target="_blank">
+                <i class="fa-solid fa-martini-glass-citrus"></i>
+                <p>DRINKS</p></a>
+            </div>
+
+            <div class="category">
+                <a href="baking.html" target="_blank">
+                <i class="fas fa-bread-slice"></i>
+                <p>BAKING</p></a>
+            </div>
+
+            <div class="category">
+                <a href="chutneys.html" target="_blank">
+                <i class="fa-solid fa-jar-wheat"></i>
+                <p>CHUTNEYS</p></a>
+            </div>
+
+            <div class="category">
+                <a href="pickles.html" target="_blank">
+                <i class="fa-solid fa-jar"></i>
+                <p>PICKLES</p></a>
+            </div>
+            <div class="category">
+                <a href="Podis.html" target="_blank">
+                <i class="fa-solid fa-prescription-bottle"></i>
+                <p>PODIS</p></a>
+            </div>
+
+            <div class="category">
+                <a href="Summer.html" target="_blank">
+                <i class="fa-solid fa-pepper-hot"></i>
+                <p>SUMMER RECIPES</p>
+            </div>
+
+            <div class="category">
+                <a href="egg.html" target="_blank">
+                <i class="fas fa-egg"></i>
+                <p>EGG RECIPES</p></a>
+            </div>
+
+            <div class="category">
+                <a href="wedding.html" target="_blank">
+                <i class="fas fa-concierge-bell"></i>
+                <p>WEDDING STYLE RECIPES</p></a>
+            </div>
+            
+        </div>
+    </div>
+
+<!---------------------------Footer--------------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+        </div>
+        <p>&copy; 2025 Delicious Recipes</p>
+    </footer>
+</body>
+
+</html>

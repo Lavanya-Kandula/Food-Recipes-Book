@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PODIS</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+
+        /*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .recipe-info i {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="search.html" target="_blank">Search</a>
+        | <span>PODIS</span>
+        <div class="search-box">
+            <input type="text" placeholder="Search recipes...">
+            <a href="search.html"><button type="submit">Search</button></a>
+        </div>
+    </div>
+
+    <div class="recipe-list">
+        <!------------------------ Recipe Item ----------------------->
+        <div class="recipe-item">
+            <a href="Avisaginjala Karam podi.HTML" target="_blank">
+                <img src="Avisaginjala Karam.png" alt="Avisaginjala Karam podi">
+                <div class="recipe-info">
+                    <h3>Avisaginjala Karam podi</h3>
+                    <i>This spicy powder made out of is strong and aromatic and is a rare and delicious spicy powder, in
+                        the range of spicy powders exclusive to Telugus. It can be enjoyed with Rice, Idlis and Dosas
+                        and can also be used in Curries. </i>
+                    <p class="category">PODIS</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="kara podi.html" target="_blank">
+            <img src="kara.png" alt="kara Podi">
+            <div class="recipe-info">
+                <h3>Kara Podi</h3>
+                <i>Kara Podi, also known as Kanda Karam Podi, is a spicy and flavorful South Indian condiment made with
+                    crispy fried yam, roasted peanuts, lentils, spices, and tamarind.</i>
+                <p class="category">PODIS</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Kandi  karam Podi.html" target="_blank">
+            <img src="Kandi karam podi.png" alt="kandi karam podi">
+            <div class="recipe-info">
+                <h3> Kandi Karam Podi </h3>
+                <i>Red Gram Powder is an all time favourite for Andhras. It goes well with Idly, Dosa, Vada, Rice and
+                    Raw Mango Pickle. This Powder tastes good and also smells good. It remains fresh for over 2 months.
+                    Adding Red Gram Powder to hot Rice and Ghee is thought to be more delicious than any other
+                    vegetables by the people of Andhra.</i>
+                <p class="category">PODIS</p>
+        </a>
+    </div>
+    </div>
+    <div class="recipe-item">
+        <a href="Challa Mirapakaya Karam Podi.html" target="_blank">
+            <img src="Mirapakaya Karam Podi.png" alt="Challa Mirapakaya Karam Podi">
+            <div class="recipe-info">
+                <h3>Challa Mirapakaya Karam Podi</h3>
+                <i>When there is no time to cook or when you are not sure what to cook, this spicy powder is a
+                    lifesaver. Every bachelor must have a stock of the Spicy Chilli powder made with Chillies soaked in
+                    Buttermilk. Here is a detailed recipe of Spicy Mirchi powder with Chillies Soaked in Buttermilk</i>
+                <p class="category">PODIS</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Rasam Podi.html" target="_blank">
+            <img src="Rasam Podi.png" alt="Rasam Podi">
+            <div class="recipe-info">
+                <h3>Rasam Podi</h3>
+                <i>If this Powder is at hand, every home, every bachelor can have delicious Rasam in an instant.</i>
+                <p class="category">PODIS</p>
+        </a>
+    </div>
+    </div>
+    <!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Non-Vegetarian</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+
+        /*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .recipe-info i {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /*-------------------- pagination ---------------------*/
+        .pagination {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .pagination a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+
+        .pagination a.active {
+            background-color: tomato;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: hsl(0, 1%, 70%);
+            border-radius: 5px;
+        }
+
+        /*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="index.html" target="_blank">Home</a>
+        | <span>Non-Vegetarian Recipes</span>
+        <div class="search-box">
+            <input type="text" placeholder="Search recipes...">
+            <a href="search.html"><button type="submit">Search</button></a>
+        </div>
+    </div>
+
+    <div class="recipe-list">
+        <!------------------------ Recipe Item ----------------------->
+        <div class="recipe-item">
+            <a href=" Malai Chicken Kofta.html" target="_blank">
+                <img src="Malai Chicken Kofta.png" alt=" Malai Chicken Kofta">
+                <div class="recipe-info">
+                    <h3> Malai Chicken Kofta</h3>
+                    <i>The Nawabi style Kofta has a balanced taste with mild spice. The same Kofta can also be turned
+                        spicy by adding more Turmeric, Salt, Garam Masada and Mirchi. The Spicy Malai Kofta goes well
+                        with Pulao.</i>
+                    <p class="category">Curries</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Peethala Iguru.html" target="_blank">
+            <img src="Peethala Iguru.png" alt="Peethala Iguru">
+            <div class="recipe-info">
+                <h3>Andhra Style Peethala Iguru</h3>
+                <i>This dish is packed with bold spices, rich flavors, and a heavenly aroma that will make your kitchen
+                    smell divine. Let's dive into this fiery, finger-licking crab delicacy that pairs best with hot,
+                    steaming rice.</i>
+                <p class="category">CURRIES</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Mutton Fry.html" target="_blank">
+            <img src="Mutton Fry.png" alt="Mutton Fry">
+            <div class="recipe-info">
+                <h3>Rayalaseema Mutton Fry</h3>
+                <i>Mutton Fry is made in all areas, but the type made in Rayalaseema is spicy and strong. And really
+                    appeals to those who like very spicy food.
+                    This is especially made in the districts of Kurnool and Chittoor. It stays fresh for 2-3 days and
+                    goes well with Sambar or Rasam.</i>
+                <p class="category">Curries</p>
+        </a>
+    </div>
+    </div>
+    <div class="recipe-item">
+        <a href="Natu Kodi Pulusu.html" target="_blank">
+            <img src="Natu Kodi Pulusu.png" alt="Natu Kodi Pulusu">
+            <div class="recipe-info">
+                <h3>Natu Kodi Pulusu</h3>
+                <i>Natu Kodi Pulusu is a quintessential Telugu dish that brings the rustic, earthy flavors of Andhra
+                    Pradesh right to your plate. This hearty curry features tender country chicken simmered in a rich,
+                    aromatic masala infused with traditional spices.</i>
+                <p class="category">Curries</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Gongura Mutton.html" target="_blank">
+            <img src="Gongura Mutton.png" alt="Gongura Mutton Curry">
+            <div class="recipe-info">
+                <h3>Gongura Mutton Curry</h3>
+                <i>It is generally made in the same method by all Telugu people. Ingredients differ depending upon the region. I am following Guntur Style Curry here.This is an age old recipe.</i>
+                <p class="category">CURRIES</p>
+        </a>
+    </div>
+    </div>
+
+    <!---------------------- Add other recipe items similarly ----------------------------->
+
+    <div class="pagination">
+        <a href="non-veg1.html">>></a>
+        <a href="non-Veg.html">1</a>
+        <a href="non-veg1.html" class="active">2</a>
+        <a href="non-Veg.html"><< </a>
+    </div>
+    <!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

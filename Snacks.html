@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desserts </title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+
+        /*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .recipe-info i {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="search.html" target="_blank">Search</a>
+        | <span>BREAKFASTS </span>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search recipes...">
+        <a href="search.html"><button type="submit">Search</button></a>
+    </div>
+
+    <!------------------------ Recipe Item ----------------------->
+    <div class="recipe-list">
+        <div class="recipe-item">
+            <a href="Crispy Chekodi.html" target="_blank">
+                <img src="Crispy Chekodi.jpg" alt="Crispy Chekodi ">
+                <div class="recipe-info">
+                    <h3>Crispy Chekodi </h3>
+                    <i>Telugu's make these Chegodis in three different ways. This Chegodi is one of them. Chegodis are
+                        easy to make but need some tips. And these tips span the whole process from kneading the dough
+                        to frying. </i>
+                    <p class="category">SNACKS </p>
+            </a>
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Ragi Laddu.html" target="_blank">
+            <img src="Ragi Laddu.jpg" alt=" Ragi Laddu ">
+            <div class="recipe-info">
+                <h3> Ragi Laddu </h3>
+                <i>Indulge in the goodness of Ragi Laddus, a traditional sweet treat brimming with nutrition and flavor.
+                    This recipe is crafted to perfection with simple ingredients and thoughtful techniques that ensure
+                    melt-in-the-mouth laddus every time. Let’s dive in!</i>
+                <p class="category">SNACKS </p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Corn Onion Pakodi.html" target="_blank">
+            <img src="Crispy Sweet Corn Onion Pakodi.jpg" alt=" Crispy Sweet Corn Onion Pakodi">
+            <div class="recipe-info">
+                <h3>Crispy Sweet Corn Onion Pakodi </h3>
+                <i>Onion hard Fritters are the most popular snack of entire south India. Wherever there is a cart on the
+                    street corners, you will find Chilli Fritters and Onion Fritters. This Sweet Corn Pakodi is a recipe
+                    like the Onion Fritters with a few variations.</i>
+                <p class="category"> SNACKS</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Oats Masala Vada.html" target="_blank">
+            <img src="Oats Masala Vada.jpg" alt="Oats Masala Vada ">
+            <div class="recipe-info">
+                <h3>Oats Masala Vada </h3>
+                <i>Oats Masala vadas are crunchy on the outside and soft on the inside and taste wonderful. They are a
+                    small variation of the regular Masala Vadas made in South India, especially by the Telugus and
+                    Tamils. And these Vadas absorb very little Oil. It is a great option as an evening snack or a
+                    starter.</i>
+                <p class="category">SNACKS </p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Aratikaya Bajji.html" target="_blank">
+            <img src="Aratikaya Bajji.jpg" alt="Aratikaya Bajji ">
+            <div class="recipe-info">
+                <h3> Aratikaya Bajji</h3>
+                <i>Raw Banana Fritters” is a great tea-time recipe. It is still served in Andhra functions as a popular
+                    item.It is very easy to make Raw Banana Fritters.</i>
+                <p class="category">SNACKS </p>
+        </a>
+    </div>
+    </div>
+
+    <!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
