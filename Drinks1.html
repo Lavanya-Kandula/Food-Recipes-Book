@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Drinks </title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+/*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+/*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+        .recipe-info i{
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+/*-------------------- pagination ---------------------*/
+        .pagination {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .pagination a{
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+        .pagination a.active{
+            background-color: tomato;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .pagination a:hover:not(.active){
+            background-color: hsl(0, 1%, 70%);
+            border-radius: 5px;
+        }
+/*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+<!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="index.html" target="_blank">Home</a>
+        | <span>Drinks Recipes</span>
+        <div class="search-box">
+            <input type="text" placeholder="Search recipes...">
+            <a href="search.html"><button type="submit">Search</button></a>
+        </div>
+    </div>
+
+    <div class="recipe-list">
+<!------------------------ Recipe Item ----------------------->
+        <div class="recipe-item">
+            <a href="Banana and Dates.html" target="_blank">
+                <img src="banana and dates.jpg" alt="Banana & Dates Milkshake">
+                <div class="recipe-info">
+                    <h3>Banana & Dates Milkshake </h3>
+                    <i>Banana milkshake is yet another popular milkshake. Make a blended drink with ripe plantains using milk and Dates.</i>
+                    <p class="category">DRINKS</p></a>
+                    
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Pomegranate Drink.html" target="_blank">
+            <img src="pomegranate juice.jpg" alt="Pomegranate Drink">
+            <div class="recipe-info">
+                <h3> Pomegranate Drink</h3>
+                <i>Pomegranate is one of the best cocktail ingredients we know, offering tartness and tang to balance a drink's sweetness, deep flavor that stands up to booze, and even a little tannic texture to make your drink more interesting.</i>
+                <p class="category"> DRINKS </p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Mango Shake.html" target="_blank">
+            <img src="mango yougurt.jpg" alt=" Mango Shake">
+            <div class="recipe-info">
+                <h3> Mango Shake </h3>
+                <i>Mango shake is a luscious and refreshing beverage which is made with sweet ripe mangoes blended with little sugar and milk.</i>
+        <p class="category">DRINKS</p></a>
+    </div>
+    </div>
+    <div class="recipe-item">
+        <a href="Caramel Milkshake.html" target="_blank">
+            <img src="caramel shake.jpg" alt="Caramel Milkshake ">
+            <div class="recipe-info">
+                <h3> Caramel Milkshake</h3>  
+                <i>Delicious caramel milk shake which is so tasty is perfect for this summer time. This caramel
+                    milk shake makes a yummy dessert too.</i>              
+                <p class="category">DRINKS</p></a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="rose milk.html" target="_blank">
+            <img src="rose milk.jpg" alt="Rose milk ">
+            <div class="recipe-info">
+                <h3>Rose Milk </h3>
+                <i>Rose milk is a popular summer beverage made with milk, rose syrup and ice cream. You can
+                    easily buy readymade rose syrup in super markets. It is a combination of sugar, water, rose extract and
+                    artificial food colouring boiled until syrupy.</i>
+                <p class="category">DRINKS</p>
+        </a>
+    </div>
+    </div>
+
+<!---------------------- Add other recipe items similarly ----------------------------->
+
+    <div class="pagination">
+        <a href="Drinks1.html">>></a>
+        <a href="Drinks.html">1</a>
+        <a href="Drinks1.html" class="active">2</a>
+        <a href="Drinks.html"><<</a>
+    </div>
+<!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CURRIES </title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+
+        /*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .recipe-info i {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="search.html" target="_blank">Search</a>
+        | <span>CURRIES</span>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Search recipes...">
+        <a href="search.html"><button type="submit">Search</button></a>
+    </div>
+
+    <!------------------------ Recipe Item ----------------------->
+    <div class="recipe-list">
+        <div class="recipe-item">
+            <a href="Korameenu Chepala Pulusu.html" target="_blank">
+                <img src="korameenu curry.png" alt="Korameenu Chepala Pulusu ">
+                <div class="recipe-info">
+                    <h3> Korameenu Chepala Pulusu</h3>
+                    <i> Korameenu Chepala Pulusu is a quintessential Andhra delicacy bursting with bold flavors, tangy
+                        tamarind, and perfectly spiced fish. This traditional dish is best enjoyed with steamed rice,
+                        idlis, or dosas. Follow this authentic recipe to recreate the magic at home.</i>
+                    <p class="category"> CURRIES </p>
+            </a>
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Sorakaya Pappu.html" target="_blank">
+            <img src="sorakaya papu.html.png" alt="Sorakaya Pappu ">
+            <div class="recipe-info">
+                <h3> Sorakaya Pappu </h3>
+                <i>Sorakaya Dal (Lauki Dal) is not too strong, spicy or sour like the normal dishes from the
+                    Telugu Land. This is a mild recipe and is very light on the stomach. This tasty Lauki dal can be
+                    eaten with
+                    Rice or as accompaniment to Roti.</i>
+                <p class="category">CURRIES </p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Gongura Paneer.html" target="_blank">
+            <img src="gongura panner.png" alt="Gongura Paneer ">
+            <div class="recipe-info">
+                <h3> Gongura Paneer</h3>
+                <i> Usually, when we think of Paneer, we think Punjabi recipes. But not this one. It is a spicy, sour
+                    Curry that goes very well with Rotis.</i>
+                <p class="category"> CURRIES</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Usirikaya Rasam .html" target="_blank">
+            <img src="amla rasam.png" alt="Usirikaya Rasam  ">
+            <div class="recipe-info">
+                <h3> Usirikaya Rasam </h3>
+                <i>This strong Rasam/Chaaru recipe with Usirikaya (Amla) as its core ingredient, is made without any
+                    tamarind. This is an ideal dish to have every day during winters. This rasam, with its spiciness of
+                    Pepper and the bitter- sour taste of Amla, can give a good competition any time to the traditional
+                    tamarind-based Chaaru.</i>
+                <p class="category"> CURRIES</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Gongura Prawns.html" target="_blank">
+            <img src="gongura prawns.png" alt="Gongura Prawns ">
+            <div class="recipe-info">
+                <h3> Gongura Prawns </h3>
+                <i>Gongura Prawns Curry Prawns are fried partially, and then cooked in oil along with fried Gongura leaves to prepare this Andhra Special Gongura Prawn Curry. It is sour in taste and spicy, and goes very well with hot rice.</i>
+                <p class="category"> CURRIES</p>
+        </a>
+    </div>
+    </div>
+
+    <!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desserts </title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .home {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+/*-------------------- Head ---------------------*/
+        a {
+            text-decoration: none;
+            color: #f26c4f;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .home a span {
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .search-box {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 15px auto;
+            align-items: center;
+
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 200px;
+            outline: none;
+            border: 0;
+            border-radius: 35px 35px 35px 35px;
+            font-size: 1rem;
+            border: 1px solid red;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            font-size: 1rem;
+            background: red;
+            color: white;
+            border-radius: 35px 35px 35px 35px;
+            cursor: pointer;
+        }
+/*-------------------- Recipe ---------------------*/
+        .recipe-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .recipe-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-info h3 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: #222;
+        }
+        .recipe-info i{
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .recipe-info .category {
+            font-size: 12px;
+            color: #d35400;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+/*-------------------- pagination ---------------------*/
+        .pagination {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .pagination a{
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+        .pagination a.active{
+            background-color: tomato;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .pagination a:hover:not(.active){
+            background-color: hsl(0, 1%, 70%);
+            border-radius: 5px;
+        }
+/*-------------------- Footer ---------------------*/
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .tagline span {
+            font-style: italic;
+            font-size: 16px;
+            color: #e27a3f;
+            display: inline-block;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #4c0070;
+        }
+
+        .categories ul li:hover {
+            color: rgb(254, 148, 113);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+<!--------------------------- Head ----------------------->
+    <div class="home">
+        <a href="index.html" target="_blank">Home</a>
+        | <span>Desserts Recipes</span>
+        <div class="search-box">
+            <input type="text" placeholder="Search recipes...">
+            <a href="search.html"><button type="submit">Search</button></a>
+        </div>
+    </div>
+
+    <div class="recipe-list">
+<!------------------------ Recipe Item ----------------------->
+        <div class="recipe-item">
+            <a href="palakova.html" target="_blank">
+                <img src="palakova.png" alt="milk palakova">
+                <div class="recipe-info">
+                    <h3> Milk PalaKova</h3>
+                    <i> Milk Khoya is made across South India. In Andhra, it has a different method for each area. Each style of Milk Khoya has its own speciality.</i>
+                    <p class="category">SNACKS</p></a>
+                    
+        </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Rice Kheer.html" target="_blank">
+            <img src="rice kheer.png" alt="Rice Kheer">
+            <div class="recipe-info">
+                <h3>Rice Kheer</h3>
+                <i>Payasam has variants such as Pongali in Telugu. In Tamil Nadu it is Akkarasi or Sekkarai Pongal. Malyalis call it payasam. Punjabis make Rice Kheer with Milk, Rice and Sugar. Muslims also make Rice Kheer, but their method is different.</i>
+                <p class="category">PRASADAM</p>
+        </a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="fruit custad.html" target="_blank">
+            <img src="Fruit Custard.png" alt="Mixed Fruit Custard ">
+            <div class="recipe-info">
+                <h3> Mixed Fruit Custard  </h3>
+                <i>The taste of the Custard is enhanced during summers. The recipe for Fruit Custard is very simple. Most of us are familiar with it, but if you follow some special tips, you will enjoy it even more.</i>
+        <p class="category">DESSERTS</p></a>
+    </div>
+    </div>
+    <div class="recipe-item">
+        <a href="Gulab Jamun Ice Cream.html" target="_blank">
+            <img src="Gulab Jamun Ice Cream.png" alt="Gulab Jamun Ice Cream">
+            <div class="recipe-info">
+                <h3> Gulab Jamun Ice Cream </h3> 
+                <i>Make Ice Cream at home that tastes exactly like the one bought in a shop. Just follow my tips, and you will get Ice Cream with that kind of taste and look.</i>
+                <p class="category">DESSERTS</p></a>
+    </div>
+    </div>
+
+    <div class="recipe-item">
+        <a href="Seethaphal Rabidi.html" target="_blank">
+            <img src="Seethaphal Rabidi.png" alt="Seethaphal Rabidi">
+            <div class="recipe-info">
+                <h3>Seethaphal Rabidi</h3>
+                <i>Seethaphal Rabidi is a traditional Indian sweet dessert made with custard apple, whole fat milk flavored with little cardamom. The texture of this sweet delicacy is extremely rich, creamy, and silky that just slips down the palate very smoothly on eating. </i>
+                <p class="category">DESSERTS</p>
+        </a>
+    </div>
+    </div>
+
+<!---------------------- Add other recipe items similarly ----------------------------->
+
+    <div class="pagination">
+        <a href="desserts1.html">>></a>
+        <a href="desserts.html" class="active">1</a>
+        <a href="desserts1.html">2</a>
+        <a href="desserts.html"><<</a>
+    </div>
+<!--------------------- Footer ---------------------->
+    <footer class="footer">
+        <div class="tagline">
+            <span>Bringing you the best and soul touched recipes to your Home</span>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>🍱South Indian</li>
+                <li>🥮North Indian</li>
+                <li>🍖Mughlai</li>
+                <li>🍨Icecreams</li>
+                <li>🥩Telangana</li>
+                <li>🍛Andhra Pradesh</li>
+                <li>🍜Chinese</li>
+                <li>🧇Punjabi</li>
+                <li>🍔International</li>
+                <li>🍗Starters</li>
+                <li>🥘Indian</li>
+                <li>🍲Karnataka</li>
+                <li>🥗Continental</li>
+                <li>🥙Tamilnadu</li>
+                <li>🍕Italian</li>
+                <li>🥥Kerala</li>
+                <li>🌯Hyderabad</li>
+                <li>🥟Gujarati</li>
+                <li>🍡Restaurant</li>
+                <li>🍙Bengali</li>
+                <li>🥐Maharashtra</li>
+                <li>🍣Indo-Italian</li>
+                <li>🍥Fusion</li>
+            </ul>
+            <p>&copy; 2025 Delicious Recipes</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
